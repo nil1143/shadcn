@@ -29,7 +29,7 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
   SidebarSeparator,
-} from "./sidebar";
+} from "./ui/sidebar";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -37,13 +37,13 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./dropdown-menu";
+} from "./ui/dropdown-menu";
 
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "./collapsible";
+} from "./ui/collapsible";
 
 const items = [
   {

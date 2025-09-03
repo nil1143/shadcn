@@ -3,7 +3,7 @@
 import { LogOut, Moon, Settings, User, Sun, PanelLeftIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,9 +12,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "./button";
+import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
-import { useSidebar } from "./sidebar";
+import { useSidebar } from "./ui/sidebar";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
