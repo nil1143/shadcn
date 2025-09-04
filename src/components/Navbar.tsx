@@ -29,14 +29,14 @@ const Navbar = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <nav className="p-4 flex items-center justify-between">
+    <nav className="p-4 flex items-center justify-between sticky top-0 bg-background z-10">
       {/* Left */}
       {/* <SidebarTrigger/> */}
       <Button variant="outline" onClick={toggleSidebar}>
         <PanelLeftIcon />
       </Button>
 
-      <Breadcrumb>
+      <Breadcrumb className="hidden md:block">
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/">Dashboard</BreadcrumbLink>
@@ -47,7 +47,7 @@ const Navbar = () => {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/users">Users</BreadcrumbLink>
+            <BreadcrumbLink href="/payments">Payments</BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
