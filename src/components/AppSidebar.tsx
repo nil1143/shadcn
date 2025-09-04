@@ -79,10 +79,11 @@ const AppSidebar = () => {
       <SidebarHeader className="py-4">
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton>
-              <Link href="/" />
-              <Image src="/logo.svg" alt="logo" width={20} height={20} />
-              <span>Tom Nil</span>
+            <SidebarMenuButton >
+              <Link href="/">
+                <Image src="/logo.svg" alt="logo" width={20} height={20} />
+              </Link>
+                <span>Tom Nil</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

@@ -15,6 +15,14 @@ import {
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { useSidebar } from "./ui/sidebar";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 const Navbar = () => {
   const { setTheme } = useTheme();
@@ -27,6 +35,22 @@ const Navbar = () => {
       <Button variant="outline" onClick={toggleSidebar}>
         <PanelLeftIcon />
       </Button>
+
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/">Dashboard</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/users/john-doe">User</BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink href="/users">Users</BreadcrumbLink>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
       {/* Right */}
       <div className="flex items-center gap-4">
         <Link href="/">Dashboard</Link>
